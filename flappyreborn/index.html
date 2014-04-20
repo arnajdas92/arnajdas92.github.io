@@ -8,10 +8,19 @@
   <link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
   <div id="flappy-bird-reborn"></div>
   <script src="js/phaser.js"></script>
   <script src="js/game.js"></script>
   <p>Press spacebar or click mouse to go up</p>
   <p>Inspired From The Popular Game Flappy Bird By Dong Nyugen</p>
+  <div class="fb-like" data-href="http://arnajdas92.github.io/flappyreborn" data-width="100" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 </body>
 </html>
