@@ -20,6 +20,24 @@
 		<![endif]-->
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/ttt.js"></script>
+		<style>
+		    .fb-comments{
+		      /*border:2px solid white;*/
+		      margin-left:250px;
+		      margin-top:20px;
+		    }
+		    .fb-like
+		    {
+		      /*border:2px solid white;
+		        width:600px;
+		      height:400px;
+		      */
+		      position: relative;
+		      margin-left:50px;
+		      margin-top:20px;
+		      
+		    }
+		  </style>
 	</head>
 	<body class="color-2">
 		<h1 class="heading"> Tic! Tac! Toe!</h1>
@@ -148,6 +166,21 @@
 				} );
 			})();
 		</script>
+		<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=238929092975470";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  <div id="flappy-bird-reborn"></div>
+  <script src="js/phaser.js"></script>
+  <script src="js/game.js"></script>
+  <p>Press spacebar or click mouse to go up</p>
+  <p>Inspired From The Popular Game <b>Flappy Bird</b> By <b>Dong Nyugen</b></p>
+  <div class="fb-like" data-href="http://arnajdas92.github.io/tictactoe/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+  <div class="fb-comments" data-href="http://arnajdas92.github.io/tictactoe/" data-width="800" data-order-by="time" data-numposts="10" data-colorscheme="light"></div>
 		
 	</body>
 </html>
