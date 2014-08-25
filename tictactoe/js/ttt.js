@@ -173,7 +173,7 @@ function change_cell(cell) {
     var row = $(cell).data("row");
     var col = $(cell).data("col");
     //console.log(arnaj.matrix);
-    console.log(turn.current_player_color());
+    //console.log(turn.current_player_color());
     board[row][col] = turn.current_player_color();
     if (turn.current_player_color() == 1){
         // Remove hover class immediately once clicked
