@@ -1,6 +1,6 @@
 arnajdas92.github.io
 ====================
-Collection of games made by me. The links are :-
+Collection of games made by me. The links to the games and their release dates are :-
 
 1) Flappy bird reborn web version(18/04/2014): http://arnajdas92.github.io/flappyreborn
 
