@@ -15,14 +15,33 @@
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/cs-select.css" />
 		<link rel="stylesheet" type="text/css" href="css/cs-skin-underline.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<!--[if IE]>
   		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/ttt.js"></script>
+		<style>
+		    .fb-comments{
+		      /*border:2px solid white;*/
+		      margin-left:250px;
+		      margin-top:20px;
+		    }
+		    .fb-like
+		    {
+		      /*border:2px solid white;
+		        width:600px;
+		      height:400px;
+		      */
+		      position: relative;
+		      margin-left:50px;
+		      margin-top:20px;
+		      
+		    }
+		  </style>
 	</head>
 	<body class="color-2">
-		<h1 class="heading"> Tic! Tac! Toe!</h1>
+		<h1 class="heading"> 2 Player Tic! Tac! Toe!</h1>
 		<div class="container">
 			<section>
 				<select id="rows" class="cs-select cs-skin-underline">
@@ -148,6 +167,28 @@
 				} );
 			})();
 		</script>
-		
+		<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=238929092975470";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  <div class="fb-like" data-href="http://arnajdas92.github.io/tictactoe/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+  <div class="fb-comments" data-href="http://arnajdas92.github.io/tictactoe/" data-width="800" data-order-by="time" data-numposts="10" data-colorscheme="light"></div>
+	<div class="container">	
+			
+				<div class="side">
+					<nav class="dr-menu">
+						<div class="dr-trigger"><span class="dr-icon dr-icon-menu"></span><a class="dr-label">Menu</a></div>
+						<ul>
+							<li><a href ="https://github.com/arnajdas92/arnajdas92.github.io/tree/master/tictactoe">Source Code</a></li>
+							<li><a href ="http://arnajdas92.github.io/flappyreborn">Flappy Reborn</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		<script src="js/ytmenu.js"></script>	
 	</body>
 </html>
