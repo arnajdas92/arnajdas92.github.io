@@ -1,21 +1,8 @@
-var start = new Date().getTime();
-console.log(start);
 var squareObjects = new Array();
 var level = 1;	// 1 is lowest level
 var countSquares = [36,36,34,32,31,30];
 var gameFinished = false;
 
-function doneHandler(result) {
-	Alert.render("Sorry!! Time's up");
-}
-function countdown(){
-	var myCountdownTest = new Countdown({
-								 	time: 3,
-									width	: 300, 
-									height	: 50,
-									onComplete : doneHandler
-									});
-}
 function shuffleBoard()
 {
 	for(var counter=0;counter<30;counter++){
@@ -329,7 +316,7 @@ function helpMe()
 		alertify.alert("babaji Ka thullu");
 		return false;
 	}
-	if(cnf()){
+	if(confirm("Want to reveal a number")){
 		var allreadyRevealed = true;
 		var counter = 0;
 		do{
